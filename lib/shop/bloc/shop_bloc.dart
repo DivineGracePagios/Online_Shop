@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:shop_cart/model/shop.dart';
 import 'package:shop_cart/repository/shop_data_repository.dart';
 
@@ -10,8 +12,26 @@ part 'shop_state.dart';
 
 class ShopBloc extends Bloc<ShopEvent, ShopState> {
   ShopDataProvider shopDataProvider = ShopDataProvider();
+
+  static var password;
+
+  static var changePassword;
+
+  static var email;
+
+  static var changeEmail;
+
+  static var submitValidForm;
+
+  
+
+
+
+  
   ShopBloc() : super(ShopInitial()) {
     add(ShopPageInitializedEvent());
+  
+    
   }
 //
   @override
@@ -33,4 +53,6 @@ class ShopBloc extends Bloc<ShopEvent, ShopState> {
       yield ItemDeletingCartState(cartItems: event.cartItems);
     }
   }
+
+  static ShopBloc of(BuildContext context) {}
 }

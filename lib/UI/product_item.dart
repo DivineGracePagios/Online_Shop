@@ -76,7 +76,7 @@ class ProductItem extends StatelessWidget {
             ),
             Positioned(
               bottom: 70,
-              right: 40,
+              right: 10,
               child: FlatButton(
                   color: Colors.black12,
                   onPressed: addToCart,
@@ -87,17 +87,17 @@ class ProductItem extends StatelessWidget {
                   )),
             ),
             Positioned(
-              top: 160,
-              right: 80,
+              top: 200,
+              right: 40,
               child: Text(
                 title,
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(),
                 
               ),
             ),
             Positioned(
-              top: 160,
-              right: 22,
+              top: 215,
+              right: 40,
               child: Text(
                 '\₱ ${price}',
                 textAlign: TextAlign.center,

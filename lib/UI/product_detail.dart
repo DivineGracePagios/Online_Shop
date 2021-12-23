@@ -29,6 +29,7 @@ class _ProductDetailState extends State<ProductDetail> {
           }
 
           return Scaffold(
+            backgroundColor: Colors.brown[700],
             appBar: AppBar(
               leading: IconButton(
                 icon: Icon(Icons.arrow_back_ios),
@@ -40,7 +41,7 @@ class _ProductDetailState extends State<ProductDetail> {
                 "Welcome to Divine Shop",
               ),
               elevation: 0,
-              backgroundColor: Colors.orange,
+              backgroundColor: Colors.brown,
             ),
             body: SingleChildScrollView(
               child: Padding(
@@ -48,7 +49,7 @@ class _ProductDetailState extends State<ProductDetail> {
                 child: Column(
                   children: [
                     Container(
-                      height: 400,
+                      height: 700,
                       width: double.infinity,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 5),
@@ -156,7 +157,7 @@ class _ProductDetailState extends State<ProductDetail> {
                             },
                             child: Text(
                               _itemselected ? 'Go to Cart' : 'Add to Cart',
-                              style: TextStyle(color: Colors.white10),
+                              style: TextStyle(color: Colors.black54),
                             )),
                       ),
                     ),

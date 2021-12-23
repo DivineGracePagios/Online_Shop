@@ -43,9 +43,9 @@ class _ShoppingCartState extends State<ShoppingCart> {
           calculateTotalAmount(cartItems);
         }
         return Scaffold(
-          backgroundColor: Colors.lightBlueAccent,
+          backgroundColor: Colors.black87,
           appBar: AppBar(
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.blue[50],
             title: Text(
               'Shopping Cart',
               style: TextStyle(color: Colors.red),
@@ -64,7 +64,7 @@ class _ShoppingCartState extends State<ShoppingCart> {
           bottomNavigationBar: Container(
             height: 70,
             decoration: BoxDecoration(
-                color: Colors.lightBlue,
+                color: Colors.blue[50],
                 boxShadow: [
                   BoxShadow(
                     offset: Offset(0, 1),
@@ -91,7 +91,7 @@ class _ShoppingCartState extends State<ShoppingCart> {
               child: Column(
                 children: [
                   Text('Total Amount'),
-                  Text('\$${totalAmount.toStringAsFixed(2)}'),
+                  Text('\₱${totalAmount.toStringAsFixed(2)}'),
                 ],
               ),
             ),
@@ -107,7 +107,7 @@ class _ShoppingCartState extends State<ShoppingCart> {
                         height: 150,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.pinkAccent,
+                          color: Colors.pink[100],
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Padding(

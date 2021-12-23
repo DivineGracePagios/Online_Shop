@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shop_cart/model/shop.dart';
 import 'package:shop_cart/shop/bloc/shop_bloc.dart';
-
 import 'product_detail.dart';
 import 'product_item.dart';
 import 'shopping_cart.dart';
 
+
 class ProductPage extends StatefulWidget {
   const ProductPage({Key key}) : super(key: key);
+
+  get submit => null;
   @override
   _ProductPageState createState() => _ProductPageState();
 }
@@ -45,6 +47,8 @@ class _ProductPageState extends State<ProductPage> {
             appBar: AppBar(
               title: Text(
                 "Welcome to Divine Shop",
+                
+                style: TextStyle(color: Colors.brown),
               ), 
               elevation: 3,
               backgroundColor: Colors.blueGrey,
